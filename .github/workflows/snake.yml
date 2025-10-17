@@ -22,11 +22,11 @@ jobs:
         with:
           github_user_name: zPaulof7
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=red&color_dots=000000&color_bg=red
+            dist/github-contribution-grid-snake.svg?color_snake=blue&color_dots=red&color_bg=000000
           svg_out_path: dist/github-contribution-grid-snake.svg
 
       - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-ghpages@v4
         with:
           target_branch: output
           build_dir: dist
